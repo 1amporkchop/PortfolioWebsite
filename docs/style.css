@@ -1,0 +1,261 @@
+/*
+light.white: #FFFCF2
+light.grey: #CCC5B9
+dark.grey: #403D39
+black: #252422
+accent.color: #EB5E28
+other.accent: #444C43
+*/
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+h2 {
+  text-align: center;
+}
+
+h5 {
+  text-align: center;
+  font-weight: 700;
+}
+
+.containerName {
+  display: inline-block;
+}
+
+.bigName {
+  overflow: hidden;
+  border-right: 0.1em solid #eb5e28;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) forwards;
+  font-size: 1.6rem;
+  width: 0;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+#navBarName {
+  font-size: 1.6vw;
+  color: #444c43;
+  padding-left: 1.2vw;
+}
+
+#navbarNav {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.3vw;
+}
+
+header {
+  text-align: center;
+  padding: 20vw 1vh;
+  background-color: #252422;
+  color: #ccc5b9;
+}
+
+.bigName {
+  font-size: 10vw;
+}
+
+#lastName {
+  color: #eb5e28;
+}
+
+#jobTitle {
+  font-size: 2rem;
+  font-style: italic;
+  padding-top: 1.5rem;
+}
+
+#aboutMe {
+  font-weight: 700;
+  padding-bottom: 3vh;
+}
+
+.about {
+  background-color: #ccc5b9;
+  padding-top: 8rem;
+}
+
+.aboutLayout {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 20vw;
+  padding-right: 14vw;
+  padding-bottom: 6vh;
+}
+
+.background {
+  font-size: 2.6vh;
+}
+
+.portraitSize {
+  border-radius: 8%;
+  margin-left: 4vw;
+  margin-bottom: 4vw;
+  margin-top: 2vw;
+  max-width: 90%;
+  height: auto;
+}
+
+.accordion-button {
+  color: #403d39;
+  background-color: #ccc5b9;
+  display: block;
+  text-align: center;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #ccc5b9;
+  background-color: #403d39;
+}
+
+.accordion-body {
+  display: block;
+  text-align: center;
+}
+
+.accordion-body ul {
+  padding-left: 0rem;
+}
+
+#projects {
+  padding-top: 8rem;
+  background-color: #444c43;
+}
+
+#myProjects {
+  font-weight: 700;
+  color: #ccc5b9;
+  padding-bottom: 2rem;
+}
+
+#projectsContainer {
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 10rem;
+}
+
+.contact ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact li {
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-bottom: 5rem;
+}
+
+#contactMe {
+  padding-bottom: 2.5rem;
+  padding-top: 6rem;
+  color: #ccc5b9;
+  font-weight: 700;
+}
+
+.contact p {
+  text-align: center;
+  padding-bottom: 1.5rem;
+  color: #ccc5b9;
+}
+
+#icons {
+  padding-left: 0;
+  padding-right: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+footer {
+  text-align: center;
+  padding-top: 10rem;
+  padding-bottom: 2rem;
+  font-weight: 500;
+  font-size: 0.8rem;
+  background-color: #403d39;
+  color: rgba(255, 251, 240, 0.253);
+}
+
+#bottomDark {
+  background-color: #403d39;
+}
+
+@media (max-width: 415px) {
+  .aboutLayout {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact ul {
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 0;
+  }
+
+  .accordion-body {
+    margin: auto;
+  }
+
+  #jobTitle {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .aboutLayout {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #icons {
+    padding-left: 0;
+    padding-right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .col-md-4 {
+    padding-right: 0rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  #navBarName {
+    font-size: 1.8vw;
+  }
+
+  #navbarNav {
+    font-size: 1.6vw;
+  }
+}
